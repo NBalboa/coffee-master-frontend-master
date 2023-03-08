@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: #fbf2c0;
+    background-color: #43281c;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+
+.item {
+    grid-area: item;
+    width: 100%;
+}
+
+.method {
+    grid-area: method;
+}
+
+.total {
+    grid-area: total;
+}
+
+
+.payment {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "item method"
+    "total total";
+}
+
+.quantity {
+    grid-area: quantity;
+}
+
+.name {
+    grid-area: name;
+}
+
+.price {
+    grid-area: price;
+}
+
+.others {
+    grid-area: others;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "quantity name price"
+    "quantity others price";
+    row-gap: 8px;
+    padding: 24px 0;
+    border-bottom: 3px solid brown;
+}
+
+.order:last-child {
+    border-bottom: none;
+}
+
+
+.card {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    padding: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.card-title {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.quantity {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.others {
+    list-style: none;
+}
+
+.other-item {
+    color: #B08968;
+}
+
+.order-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.order-input {
+    border-color: black;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #eee1d5;
+}
+
+.order-label {
+    color: #B08968;
+    background-color: #eee1d5;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+    
+}
+
+.customer {
+    padding: 20px 30px;
+}
+
+.small {
+    width: 200px;
+}
+
+
+table {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 24px;
+    margin:  0 auto;
+
+
+}
+
+td,th {
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    border-radius: 9999px;
+    padding: 10px;
+    background-color: #43281c;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #B08968;
+}
